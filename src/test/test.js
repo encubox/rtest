@@ -7,7 +7,8 @@ require("geckodriver");
 
 // Application Server
 const serverUri = "http://localhost:3001/#";
-const appTitle = "React Selenium App";
+// const appTitle = "React Selenium App";
+const appTitle = "React App";
 
 /**
  * Config for Chrome browser
@@ -76,7 +77,8 @@ describe("Home Page", function() {
   it("Should check whether the given element is loaded", function() {
     return new Promise((resolve, reject) => {
       browser
-        .findElement({ id: "sel-button" })
+        // .findElement({ id: "sel-button" })
+        .findElement({ id: "root" })
         .then(elem => resolve())
         .catch(err => reject(err));
     });
