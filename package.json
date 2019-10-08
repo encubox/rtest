@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "s-test": "mocha src/test/test.js"
+    "stest": "mocha src/test/test.js",
+    "jtest": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
